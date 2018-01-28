@@ -12,6 +12,13 @@
  For example 40 / 5 isn't interesting, but writing a tree planting app that given a species of tree and how much space you have will estimate how many trees you can plant is moreso. (e.g., I have 40 sq ft and want to plant walnut trees. They need 5 sq ft of growing space around the trunk, how many can I fit?).
  
  You should write your story bits in comments (e.g., between /* and */, or lines starting with // ) around where the code should go.
- 
 */
-
+/* For this project, a banking institution is seeking to implement application parameters that let their users set investing goals and track their progress. Users will be allowed to contribute a starting amount, which will be constant, and then they will be allowed to set monthly goals and track their progress towards the goals as a percentage of completion. The app will also calculate the monthly interest earned and display the total value of the users investment.
+ */
+let startingContribution = 100.50
+var contributionsThisMonth = 15
+var contributionMonthlyGoal = 75
+var contributionTotal: Double = startingContribution+Double(contributionsThisMonth)
+let percentageOfCompletion: Double = Double(contributionsThisMonth)/Double(contributionMonthlyGoal)
+let accruedInterest: Double = contributionTotal * (0.01)
+contributionTotal += accruedInterest
